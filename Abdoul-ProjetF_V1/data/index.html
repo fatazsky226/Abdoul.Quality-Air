@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Serveur ESP32</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+
+        <link rel="stylesheet" type="text/css" href="w3.css">
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+
+        </style>
+    </head>
+
+    <body class="w3-animate-opacity">
+        <div class="w3-card w3-blue w3-padding-small w3-center">
+            <h1>ESP32</h1>
+        </div>
+
+        <div class="w3-margin w3-center w3-card w3-padding-24 w3-animate-opacity">
+            <h3 class="w3-padding"><i class='fas fa-temperature-high' style='font-size:24px'></i>  Température  <i class='fas fa-temperature-high' style='font-size:24px'></i></h3>
+            <p class="w3-xxlarge"><span id="temperature"></span> °C</p>
+        </div>
+
+        <div class="w3-margin w3-center w3-card w3-padding-24 w3-animate-opacity">
+            <h3 class="w3-padding">  Humidity  </h3>
+            <p class="w3-xxlarge"><span id="humidity"></span> %</p>
+        </div>
+
+        <div class="w3-margin w3-center w3-card w3-padding-24 w3-animate-opacity">
+            <h3 class="w3-padding">  CO2  </h3>
+            <p class="w3-xxlarge"><span id="co2"></span> ppm</p>
+        </div>
+    
+        <div class="w3-padding w3-center">
+            <button id="refresh-button">Actualiser</button>
+        </div>
+        <div class="w3-padding w3-center">
+            <i><a href="https://github.com/fatazsky226/Abdoul.Quality-Air.git" style="text-decoration: none;">Bague Abdoul Projet lien</a></i>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+              <p class="text-center" id="date-time"></p>
+            </div>
+        </div>
+
+    </body>
+</html>
